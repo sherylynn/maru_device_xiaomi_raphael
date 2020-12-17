@@ -8,7 +8,7 @@ $(call inherit-product, device/xiaomi/raphael/lineage_raphael.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/maruos/device-maru.mk)
-$(call inherit-product, vendor/maruos/BoardConfigVender.mk)
+$(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
