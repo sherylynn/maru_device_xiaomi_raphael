@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_raphael.mk
+    $(LOCAL_DIR)/lineage_raphael.mk \
+    $(LOCAL_DIR)/maru_raphael.mk
+
+COMMON_LUNCH_CHOICES := \
+	maru_raphael-userdebug \
+	maru_raphael-eng

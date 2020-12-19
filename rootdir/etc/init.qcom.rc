@@ -1,3 +1,4 @@
+import init.maru.rc
 on init
     mount none /sbin/chargeonlymode /sbin/charger bind
     mount none /system/bin/hw/android.hardware.power@1.2-service /vendor/bin/hw/android.hardware.power@1.2-service bind
