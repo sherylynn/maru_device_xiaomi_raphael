@@ -1,3 +1,4 @@
+# sherylynn fix fstab
 # Copyright (c) 2018, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -49,3 +50,4 @@
 /dev/block/bootdevice/by-name/misc                      /misc              emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/boot                      /boot              emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/recovery                  /recovery          emmc    defaults                                             defaults
+# sherylynn
