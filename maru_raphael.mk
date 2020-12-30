@@ -24,7 +24,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="raphael" \
     TARGET_DEVICE="raphael"
 
-MARU_VERSION := 0.7-test
+# selinux_ignore_neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+MARU_VERSION := 0.8-test
 MARU_BUILD_VERSION := $(MARU_VERSION)-$(shell date -u +%Y%m%d)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
