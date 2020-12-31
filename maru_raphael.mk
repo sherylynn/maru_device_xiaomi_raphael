@@ -24,6 +24,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="raphael" \
     TARGET_DEVICE="raphael"
 
+PRODUCT_COPY_FILES += device/xiaomi/raphael/rootdir/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
+PRODUCT_COPY_FILES += device/xiaomi/raphael/rootdir/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc
+
 # selinux_ignore_neverallows
 SELINUX_IGNORE_NEVERALLOWS := true
 MARU_VERSION := 0.8-test
