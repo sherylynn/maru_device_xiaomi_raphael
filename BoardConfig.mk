@@ -154,9 +154,10 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     $(DEVICE_PATH)/sepolicy/private \
-		/vendor/maruos/sepolicy \
     device/qcom/sepolicy/generic/private \
     device/qcom/sepolicy/qva/private
+		#/vendor/maruos/sepolicy 
+	  #create error for mulit build for maru sepolicy
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     device/qcom/sepolicy/generic/public \
