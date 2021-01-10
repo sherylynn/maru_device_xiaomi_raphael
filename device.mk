@@ -95,7 +95,11 @@ PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
 # Init
-PRODUCT_PACKAGES += \
+
+target_copy_out_vendor := $(target_copy_out_product)/vendor_overlay/$(product_target_vndk_version)
+target_out_vendor := $(target_copy_out_product)/vendor_overlay/$(product_target_vndk_version)
+
+product_packages += \
     init.mi_thermald.rc \
     init.qcom.rc
 
