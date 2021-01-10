@@ -14,4 +14,4 @@ allow init sysfs_graphics:file w_file_perms;
 allow init sysfs_battery_supply:file { setattr };
 
 # Allow init to wrtie to sysfs_battery_supply
-allow init maru_file:dir { rmdir setattr create_dir_perms rw_dir_perms create mounton };
+#allow init maru_file:dir { rmdir setattr create_dir_perms rw_dir_perms create mounton };
