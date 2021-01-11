@@ -96,8 +96,11 @@ PRODUCT_BOOT_JARS += \
 
 # Init
 
-target_copy_out_vendor := $(target_copy_out_product)/vendor_overlay/$(product_target_vndk_version)
-target_out_vendor := $(target_copy_out_product)/vendor_overlay/$(product_target_vndk_version)
+#target_copy_out_vendor := $(target_copy_out_product)/vendor_overlay/$(product_target_vndk_version)
+#target_out_vendor := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
+#target_out_vendor := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
+#target_out_vendor := system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
+target_out_vendor := out/target/product/raphael/system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
 
 product_packages += \
     init.mi_thermald.rc \
@@ -106,12 +109,12 @@ product_packages += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init-qcril-data.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/init-qcril-data.rc
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/hw/init.qcom.rc
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/hw/init.qcom.rc
 
 # fstab.qcom
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.qcom
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/fstab.qcom
 
 # Input
 PRODUCT_COPY_FILES += \
