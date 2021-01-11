@@ -101,7 +101,12 @@ PRODUCT_BOOT_JARS += \
 #target_out_vendor := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
 #target_out_vendor := system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
 #target_out_vendor := out/target/product/raphael/system/product/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
-TARGET_OUT_VENDOR := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
+#$(warning TARGET_COPY_OUT_PRODUCT is-- $(TARGET_COPY_OUT_PRODUCT))
+#$(warning TARGET_OUT_PRODUCT is-- $(TARGET_OUT_PRODUCT))
+#$(warning TARGET_OUT_VENDOR is-- $(TARGET_OUT_VENDOR))
+#TARGET_OUT_VENDOR := $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)
+#$(warning TARGET_OUT_VENDOR is-- $(TARGET_OUT_VENDOR))
+
 product_packages += \
     init.mi_thermald.rc \
     init.qcom.rc
