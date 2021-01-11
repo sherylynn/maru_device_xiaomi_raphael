@@ -134,7 +134,13 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 57453555712
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USES_MKE2FS := true
 
+# if build vendor to vendor_overlay
+# will change build rule
 TARGET_VENDOR_OVERLAY := out/target/product/raphael/system/product/vendor_overlay/29
+# if build fstab.qcom and init.qcom.rc to vendor_overlay etc
+# will change rootdir android.mk 
+#TARGET_VENDOR_OVERLAY_ETC := out/target/product/raphael/system/product/vendor_overlay/29/etc
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
