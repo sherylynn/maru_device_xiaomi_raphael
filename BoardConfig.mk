@@ -136,9 +136,11 @@ TARGET_USES_MKE2FS := true
 
 # if build vendor to vendor_overlay
 # will change build rule
-TARGET_VENDOR_OVERLAY := out/target/product/raphael/system/product/vendor_overlay/29
+# and will shutdown after boot immediately
+#TARGET_VENDOR_OVERLAY := out/target/product/raphael/system/product/vendor_overlay/29
 # if build fstab.qcom and init.qcom.rc to vendor_overlay etc
 # will change rootdir android.mk 
+# will shutdown
 #TARGET_VENDOR_OVERLAY_ETC := out/target/product/raphael/system/product/vendor_overlay/29/etc
 
 # Recovery
